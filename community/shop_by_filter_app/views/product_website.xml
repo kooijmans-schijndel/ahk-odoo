@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="website_sale.products_categories" inherit_id="website_sale.products" active="False" customize_show="True" name="eCommerce Categories">
+			<xpath expr="//div[@id='products_grid_before']" position="before">
+            	<t t-set="enable_left_column" t-value="True"/>
+       		</xpath>
+       		<xpath expr="//div[@id='products_grid_before']" position="inside">
+			<span><h3>Category</h3></span>
+			<button type="button" class="btn btn-link d-lg-none"
+                data-target="#wsale_products_categories_collapse" data-toggle="collapse">
+                Show categories
+            </button>
+            <div class="collapse d-lg-block" id="wsale_products_categories_collapse">
+                <ul class="nav nav-pills flex-column mb-2">
+                    <li class="nav-item">
+                        <a t-att-href="keep('/shop', category=0)" t-attf-class="nav-link #{'' if category else 'active'} o_not_editable">All Products</a>
+                    </li>
+                    <t t-foreach="categories" t-as="c">
+                        <t t-call="website_sale.categories_recursive" />
+                    </t>
+                </ul>
+            </div>
+		</xpath>
+	</template>
+
+	<template id="products_shop_count" inherit_id="website_sale.categories_recursive">
+		<xpath expr="//li/a/span" position="after">
+			<span t-field="c.count" class="btn btn-secondary btn-sm" style="float:right"/>
+		</xpath>
+	</template>
+
+	<template id="shop_by_brand_link" name="Shop by Brand">
+		<li class="nav-item">
+			<a t-att-href="keep_brand('/shop/brand/' + slug(b), brand=0)" t-attf-class="nav-link#{' active' if b.id == int(brand_id or 0) else ''}">
+				<span t-field="b.name"/>
+				<span t-field="b.count" class="btn btn-secondary btn-sm" style="float:right"></span>
+			</a>
+		</li>
+	</template>
+	
+	<template id="shop_by_brand" inherit_id="website_sale.products" active="False" customize_show="True" name="Shop by Brand">
+		<xpath expr="//div[@id='products_grid_before']" position="before">
+            	<t t-set="enable_left_column" t-value="True"/>
+       	</xpath>
+		<xpath expr="//div[@id='products_grid_before']" position="inside">
+			<br/><strong><h3>Brands</h3></strong>
+			<ul class="nav nav-pills flex-column mt16">
+
+				<t t-foreach="brand" t-as="b">
+					<t t-call="shop_by_filter_app.shop_by_brand_link" />
+				</t>
+			</ul>
+		</xpath>
+	</template>
+
+	<template id="portal_website_brand" inherit_id="website.layout">
+		<xpath expr="//div[@id='wrapwrap']/header/nav/div/div"
+
+		 position="after">
+			<li class="nav-item">
+				<a href="/brands_view" class="nav-link">Brand</a>
+			</li>
+		</xpath>
+	</template>
+</odoo>

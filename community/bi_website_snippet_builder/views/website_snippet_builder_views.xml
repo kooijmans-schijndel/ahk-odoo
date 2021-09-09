@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="website_snippet_builder_view_form" model="ir.ui.view">
+        <field name="name">website.snippet.builder.view.form</field>
+        <field name="model">website.snippet.builder</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="view_id"/>
+                    </group>
+                    <xpath>
+                        <notebook>
+                            <page string="HTML">
+                                <group string="HTML">
+                                    <field name="snippet_html" widget="html"/>
+                                </group>
+                            </page>
+                            <page string="CSS">
+                                <group string="CSS">
+                                    <field name="snippet_css"/>
+                                </group>
+                            </page>
+                            <page string="JS">
+                                <group string="JS">
+                                    <field name="snippet_js"/>
+                                </group>
+                            </page>
+                        </notebook>
+                    </xpath>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="website_snippet_builder_view_tree" model="ir.ui.view">
+        <field name="name">website.snippet.builder.view.tree</field>
+        <field name="model">website.snippet.builder</field>
+        <field name="arch" type="xml">
+            <tree string="Website Snippet Builder">
+                <field name="name" string="Name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="website_snippet_builder_action">
+        <field name="name">Snippet Builder</field>
+        <field name="res_model">website.snippet.builder</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem
+            name="Website Snippet"
+            id="website_snippet_builder_menu"
+            action="website_snippet_builder_action"
+            parent="website.menu_website_global_configuration"/>
+</odoo>

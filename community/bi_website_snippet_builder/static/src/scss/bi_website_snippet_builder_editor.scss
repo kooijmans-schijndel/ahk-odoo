@@ -1,0 +1,22 @@
+.editor_enable{
+    & .o_technical_modal{
+        & .modal-dialog{
+            max-width: 50% !important;
+        }
+        & #codeTabs{
+            & li a{
+                color: #000;
+                font-weight: 600;
+            }
+            & li a.active{
+                color: theme-color('primary') !important;
+            }
+        }
+        & #codeTabsContent{
+            padding-top: 20px;
+            & textarea{
+                height: 300px;
+            }
+        }
+    }
+}

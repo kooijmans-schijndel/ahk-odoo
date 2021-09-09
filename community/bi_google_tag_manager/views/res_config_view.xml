@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<record id="website_config_inherit_view" model="ir.ui.view">
+		<field name="name">website.config.inherit</field>
+		<field name="model">res.config.settings</field>
+		<field name="inherit_id" ref="website.res_config_settings_view_form" />
+		<field name="arch" type="xml">
+			<xpath expr="//div[@id='auth_signup_uninvited_setting']" position="after">
+				<div class="col-xs-12 col-md-6 o_setting_box" id="gtm_setting">
+					<div class="o_setting_left_pane">
+						<field name="enable_google_tag_manager"/>
+					</div>
+					<div class="o_setting_right_pane">
+						<label for="enable_google_tag_manager"/>
+						<div class="text-muted">
+							Use Google tag manager for your website
+						</div>
+						<div class="content-group" attrs="{'invisible': [('enable_google_tag_manager', '=', False)]}">
+							<div class="row mt16">
+								<label class="col-lg-3 o_light_label" string="Container ID" for="gtm_key"/>
+								<field name="gtm_key" placeholder="GTM-XXXXXXX"
+								attrs="{'required': [('enable_google_tag_manager', '=', True)]}"/>
+							</div>
+						</div>
+						<div attrs="{'invisible': [('enable_google_tag_manager', '=', False)]}">
+							<a href="https://youtu.be/P4suvDuj0kI"
+									class="oe_link" target="_blank">
+								<i class="fa fa-arrow-right"/>
+								How to get my Google Tag Manager ID
+							</a>
+						</div>
+					</div>
+				</div>
+			</xpath>
+		</field>
+	</record>
+</odoo>

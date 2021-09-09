@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<template id="brand_view_template_id" name="Brands">
+		<t t-call="website.layout">
+			<style>
+				.row_name {
+					float: left;
+					width: 350px;
+					position: relative;
+  					left: 90px;
+					<!-- justify-content: space-around; -->
+				}
+				.class1 {
+					width: 300px;
+					height: 270px;
+					background-color: #F9F8F8;
+					margin-top:20px;
+				}
+				.center {
+					margin: 30px;
+					margin-right: auto;
+					display: block;
+					width:100%;
+					padding;10px;
+				}
+				.row {
+					margin-left: 100px;
+				}
+			</style>
+			<div class="container" id="row_name_id">
+				<h3 class="text-center">Brands</h3>
+					<t t-foreach="brands" t-as="brand">
+						<div class="row_name" >
+							<div class="class1 col-lg-8">
+								<div class="center">
+									<div class="image_view">
+	                        			<span t-field="brand.image" t-options="{'widget': 'image', 'resize': None if product_image_big else '300x300'}" class="image"/><br/><br/>
+	                        		</div>
+		                        	<a t-att-href="keep_brand('/brand_product_view/' + slug(brand), brand=0)" t-attf-class="nav-link#{' active' if brand.id == int(brand_id or 0) else ''}"><h5><b><div t-field="brand.name" class="text-center"></div></b></h5></a>
+	                    		</div>
+	                    	</div>
+	                	</div>
+					</t>
+				</div>
+    		</t>
+    </template>
+
+    <template id="brand_count" inherit_id="shop_by_filter_app.brand_view_template_id" active="False" customize_show="True" name="Product Count">
+    	<xpath expr="//div[@id='row_name_id']/t/div/div/div" position="inside">
+    		<div class="text-center">
+		        <p t-esc="brand.count"></p>
+		    </div>
+    	</xpath>
+    </template>
+</odoo>
