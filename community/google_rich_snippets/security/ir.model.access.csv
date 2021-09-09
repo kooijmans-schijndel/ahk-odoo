@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+
+user_rich_snippets_config,webkul.website.addons.user,model_rich_snippets_config,website.group_website_designer,1,1,1,1

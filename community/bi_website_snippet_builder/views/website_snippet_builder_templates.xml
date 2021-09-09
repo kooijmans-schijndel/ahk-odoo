@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="snippets" inherit_id="website.snippets">
+        <xpath expr="//div[@id='snippet_structure']/div[hasclass('o_panel_body')]" position="after">
+            <div class="o_panel_header">
+                Snippet Builder
+            </div>
+            <div class="o_panel_body">
+                <t t-call="bi_website_snippet_builder.snippet_panel_list"></t>
+            </div>
+        </xpath>
+    </template>
+
+    <template id="snippet_panel_list" name="Snippet Panel List">
+        <t t-snippet="bi_website_snippet_builder.snippet_builder" t-thumbnail="/bi_website_snippet_builder/static/src/img/snippet_builder.png"/>
+    </template>
+
+    <template id="snippet_options" name="Snippet Builder options" inherit_id="website.snippet_options">
+        <xpath expr="//div" position="after">
+            <div data-js='build_snippet' data-selector=".js_build_snippet"
+                 data-drop-near="[data-oe-field='body_html']:not(:has(.o_layout)) > , .oe_structure > "
+                 data-drop-in="[data-oe-field='body_html']:not(:has(.o_layout)), .oe_structure">
+                <li data-select_snippet_list="" data-no-preview="true">
+                    <a href="#">Snippet</a>
+                </li>
+            </div>
+        </xpath>
+    </template>
+
+    <template id="snippet_builder" name="Snippet Builder">
+        <div class="oe_snippet_body input-group js_build_snippet" contenteditable="true">
+
+        </div>
+    </template>
+
+    <template id="snippet_demo_view" name="Snippet Builder Demo View">
+        <section style="width:100%;">
+            <t t-if="snippet_id" t-set="snippet_record" t-value="request.env['website.snippet.builder'].search([('id','=',snippet_id)])"></t>
+            <t t-if="snippet_record and snippet_record.snippet_html">
+                <div t-field="snippet_record.snippet_html"></div>
+            </t>
+            <t t-if="snippet_record and snippet_record.snippet_css">
+                <style>
+                    <t t-raw="snippet_record.snippet_css"></t>
+                </style>
+            </t>
+            <t t-if="snippet_record and snippet_record.snippet_js">
+                <script>
+                    window.addEventListener('load', function () {
+                        odoo.define('bi_website_snippet_builder.snippet_builder_<t t-esc="snippet_record.id"/>', function (require) {
+                            <t t-raw="snippet_record.snippet_js"></t>
+                        });
+                    });
+                </script>
+            </t>
+        </section>
+    </template>
+</odoo>

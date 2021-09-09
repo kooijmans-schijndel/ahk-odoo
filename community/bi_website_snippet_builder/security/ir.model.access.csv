@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_website_snippet_builder_admin,website.snippet.builder.module.admin,bi_website_snippet_builder.model_website_snippet_builder,base.group_system,1,1,1,1

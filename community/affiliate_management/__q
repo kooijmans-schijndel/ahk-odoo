@@ -1,0 +1,311 @@
+[1mdiff --git a/static/description/index.html b/static/description/index.html[m
+[1mindex adf3754..4b261ec 100644[m
+[1m--- a/static/description/index.html[m
+[1m+++ b/static/description/index.html[m
+[36m@@ -20,7 +20,7 @@[m
+     [m
+     <div class="shadow p-3 mb-5 bg-white rounded" style="background: #FFFFFF;box-shadow: 0px 0px 6px 0  rgba(0, 0, 0, 0.1);padding:4% 4% 1% 4%;height:100%;margin-top:2%"> [m
+      <div class="container" style="color:#333333;font-size:18px;font-weight:bold;">[m
+[31m-    <div> <img src= "icon-1.png" style="position: absolute;margin-top:-0.9%;width: 40.14px;height:40.14px;background: rgba(255, 255, 255, 0.7);"></div><div style="margin-left:6%;">Affiliate Management in Odoo for marketing on another level!</div>[m
+[32m+[m[32m    <div class="position-absolute"> <img src= "icon-1.png" style="position:absolute;margin-top:-0.9%;width: 40.14px;height:40.14px;background: rgba(255, 255, 255, 0.7);"></div><div style="margin-left:6%;">Affiliate Management in Odoo for marketing on another level!</div>[m
+      </div>[m
+ 	</br>[m
+      <div class="container " style="color:#555555;font-size:16px;">[m
+[36m@@ -58,7 +58,7 @@[m
+ [m
+ <div class="shadow p-3 mb-5 bg-white rounded" style="background: #FFFFFF;box-shadow: 0px 0px 6px 0  rgba(0, 0, 0, 0.1);padding:4% 4% 1% 4%;height:100%;margin-top:2%"> [m
+      <div class="container" style="color:#333333;font-size:18px;font-weight:bold;">[m
+[31m-    <div> <img src= "icon-2.png" style="position: absolute;margin-top:-0.9%;width: 40.14px;height:40.14px;background: rgba(255, 255, 255, 0.7);"></div><div style="margin-left:6%;">Hassle-free way for Affiliate Management in Odoo</div>[m
+[32m+[m[32m    <div class="position-absolute"> <img src= "icon-2.png" style="position: absolute;margin-top:-0.9%;width: 40.14px;height:40.14px;background: rgba(255, 255, 255, 0.7);"></div><div style="margin-left:6%;">Hassle-free way for Affiliate Management in Odoo</div>[m
+      </div>[m
+ 	</br>[m
+      <div class="container " style="color:#555555;font-size:16px;">[m
+[36m@@ -425,6 +425,288 @@[m
+ </section>[m
+ [m
+ <br/><br/>[m
+[32m+[m[32m<section class="oe_container mb32">[m
+[32m+[m[32m    <div class="row mt16 mb16 pb32">[m
+[32m+[m[32m        <div class="container text-center d-none d-xl-block" style="color:#333333;font-size:26px;font-weight:bold;">[m
+[32m+[m[32m            <p>Our Other Apps</p>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m        <div class=" d-none d-xl-block container text-center" style="color:#555555;font-size:18px;">[m
+[32m+[m[32m            Make your eCommerce Experience more better with our other Apps.[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m        <div class="container ml0 mr0">[m
+[32m+[m[32m            <div class="offset-md-2 col-md-8">[m
+[32m+[m[32m                <div class="row ml0 mr0">[m
+[32m+[m[32m                    <div id="mp_addons_carousel" class="container carousel slide mt64 mb32 d-none d-xl-block" data-ride="carousel">[m
+[32m+[m[32m                        <div class="carousel-inner">[m
+[32m+[m[32m                            <div class="carousel-item active" style="min-height: 0px;">[m
+[32m+[m[32m                                <div class="row">[m
+[32m+[m[32m                                    <div class="text-center col-xs-12 col-sm-3 col-md-3 mb16 mt16" style="float: left;">[m
+[32m+[m[32m                                        <a href="https://apps.odoo.com/apps/modules/13.0/marketplace_membership" target="_blank">[m
+[32m+[m[32m                                            <div>[m
+[32m+[m[32m                                                <img class="img img-responsive" alt="not found" width="100" height="100" style="border-radius: 16px;" src="https://apps.odoocdn.com/apps/assets/13.0/marketplace_membership/icon.png">[m
+[32m+[m[32m                                                <div class="mt8" style="font-size: 16px;color: #333333;text-align: center;line-height: 21px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">[m
+[32m+[m[32m                                                    Marketplace <br/> Membership[m
+[32m+[m[32m                                                </div>[m
+[32m+[m[32m                                            </div>[m
+[32m+[m[32m                                        </a>[m
+[32m+[m[32m                                    </div>[m
+[32m+[m[32m                                    <div class="text-center col-xs-12 col-sm-3 col-md-3 mb16 mt16" style="float: left;">[m
+[32m+[m[32m                                        <a href="https://apps.odoo.com/apps/modules/13.0/marketplace_advance_barcode_labels" target="_blank">[m
+[32m+[m[32m                                            <div>[m
+[32m+[m[32m                                                <img class="img img-responsive" width="100" height="100" style="border-radius: 16px;" src="https://apps.odoocdn.com/apps/assets/13.0/marketplace_advance_barcode_labels/icon.png">[m
+[32m+[m[32m                                                <div class="mt8" style="font-size: 16px;color: #333333;text-align: center;line-height: 21px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">[m
+[32m+[m[32m                                                    Advance Barcode <br/> Labels For Product[m
+[32m+[m[32m                                                </div>[m
+[32m+[m[32m                                            </div>[m
+[32m+[m[32m                                        </a>[m
+[32m+[m[32m                                    </div>[m
+[32m+[m[32m                                    <div class="text-center col-xs-12 col-sm-3 col-md-3 mb16 mt16" style="float: left;">[m
+[32m+[m[32m                                        <a href="https://apps.odoo.com/apps/modules/13.0/marketplace_booking_system" target="_blank">[m
+[32m+[m[32m                                            <div>[m
+[32m+[m[32m                                                <img class="img img-responsive" width="100" height="100" style="border-radius: 16px;" src="https://apps.odoocdn.com/apps/assets/13.0/marketplace_booking_system/icon.png">[m
+[32m+[m[32m                                                <div class="mt8" style="font-size: 16px;color: #333333;text-align: center;line-height: 21px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">[m
+[32m+[m[32m                                                    Booking & Reservation <br/> Management[m
+[32m+[m[32m                                                </div>[m
+[32m+[m[32m                                            </div>[m
+[32m+[m[32m                                        </a>[m
+[32m+[m[32m                                    </div>[m
+[32m+[m[32m                                    <div class="text-center col-xs-12 col-sm-3 col-md-3 mb16 mt16" style="float: left;">[m
+[32m+[m[32m                                        <a href="https://apps.odoo.com/apps/modules/13.0/marketplace_preorder" target="_blank">[m
+[32m+[m[32m                                            <div>[m
+[32m+[m[32m                                                <img class="img img-responsive" width="100" height="100" style="border-radius: 16px;" src="https://apps.odoocdn.com/apps/assets/13.0/marketplace_preorder/icon.png">[m
+[32m+[m[32m                                                <div class="mt8" style="font-size: 16px;color: #333333;text-align: center;line-height: 21px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">[m
+[32m+[m[32m                                                    Marketplace <br/> Pre-Order[m
+[32m+[m[32m                                                </div>[m
+[32m+[m[32m                                            </div>[m
+[32m+[m[32m                                        </a>[m
+[32m+[m[32m                                    </div>[m
+[32m+[m[32m                                    <div class="text-center col-xs-12 col-sm-3 col-md-3 mb16 mt16" style="float: left;">[m
+[32m+[m[32m                                        <a href="https://apps.odoo.com/apps/modules/13.0/marketplace_favourite_seller" target="_blank">[m
+[32m+[m[32m                                            <div>[m
+[32m+[m[32m                                                <img class="img img-responsive" alt="not found" width="100" height="100" style="border-radius: 16px;" src="https://apps.odoocdn.com/apps/assets/13.0/marketplace_favourite_seller/icon.png">[m
+[32m+[m[32m                                                <div class="mt8" style="font-size: 16px;color: #333333;text-align: center;line-height: 21px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">[m
+[32m+[m[32m                                                    Favourite <br/> Seller[m
+[32m+[m[32m                                                </div>[m
+[32m+[m[32m                                            </div>[m
+[32m+[m[32m                                        </a>[m
+[32m+[m[32m                                    </div>[m
+[32m+[m[32m                                    <div class="text-center col-xs-12 col-sm-3 col-md-3 mb16 mt16" style="float: left;">[m
+[32m+[m[32m                                        <a href="https://apps.odoo.com/apps/modules/13.0/marketplace_shipping_per_product" target="_blank">[m
+[32m+[m[32m                                            <div>[m
+[32m+[m[32m                                                <img class="img img-responsive" alt="not found" width="100" height="100" style="border-radius: 16px;" src="https://apps.odoocdn.com/apps/assets/13.0/marketplace_shipping_per_product/icon.png">[m
+[32m+[m[32m                                                <div class="mt8" style="font-size: 16px;color: #333333;text-align: center;line-height: 21px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">[m
+[32m+[m[32m                                                    Shipping <br/> Per Product[m
+[32m+[m[32m                                                </div>[m
+[32m+[m[32m                                            </div>[m
+[32m+[m[32m                                        </a>[m
+[32m+[m[32m                                    </div>[m
+[32m+[m[32m                                    <div class="text-center col-xs-12 col-sm-3 col-md-3 mb16 mt16" style="float: left;">[m
+[32m+[m[32m                                        <a href="https://apps.odoo.com/apps/modules/13.0/marketplace_hyperlocal_system" target="_blank">[m
+[32m+[m[32m                                            <div>[m
+[32m+[m[32m                                                <img class="img img-responsive" alt="not found" width="100" height="100" style="border-radius: 16px;" src="https://apps.odoocdn.com/apps/assets/13.0/marketplace_hyperlocal_system/icon.png">[m
+[32m+[m[32m                                                <div class="mt8" style="font-size: 16px;color: #333333;text-align: center;line-height: 21px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">[m
+[32m+[m[32m                                                    Marketplace <br/> Hyperlocal System[m
+[32m+[m[32m                                                </div>[m
+[32m+[m[32m                                            </div>[m
+[32m+[m[32m                                        </a>[m
+[32m+[m[32m                                    </div>[m
+[32m+[m[32m                                    <div class="text-center col-xs-12 col-sm-3 col-md-3 mb16 mt16" style="float: left;">[m
+[32m+[m[32m                                        <a href="https://apps.odoo.com/apps/modules/13.0/marketplace_sms_notification" target="_blank">[m
+[32m+[m[32m                                            <div>[m
+[32m+[m[32m                                                <img class="img img-responsive" alt="not found" width="100" height="100" style="border-radius: 16px;" src="https://apps.odoocdn.com/apps/assets/13.0/marketplace_sms_notification/icon.png">[m
+[32m+[m[32m                                                <div class="mt8" style="font-size: 16px;color: #333333;text-align: center;line-height: 21px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">[m
+[32m+[m[32m                                                    SMS <br/> Notifications[m
+[32m+[m[32m                                                </div>[m
+[32m+[m[32m                                            </div>[m
+[32m+[m[32m                                        </a>[m
+[32m+[m[32m                                    </div>[m
+[32m+[m[32m                                </div>[m
+[32m+[m[32m                            </div>[m
+[32m+[m[32m                            <div class="carousel-item" style="min-height: 0px;">[m
+[32m+[m[32m                                <div class="row">[m
+[32m+[m[32m                                    <div class="text-center col-xs-12 col-sm-3 col-md-3 mb16 mt16" style="float: left;">[m
+[32m+[m[32m                                        <a href="https://apps.odoo.com/apps/modules/13.0/marketplace_seller_slider" target="_blank">[m
+[32m+[m[32m                                            <div>[m
+[32m+[m[32m                                                <img class="img img-responsive" alt="not found" width="100" height="100" style="border-radius: 16px;" src="https://apps.odoocdn.com/apps/assets/13.0/marketplace_seller_slider/icon.png">[m
+[32m+[m[32m                                                <div class="mt8" style="font-size: 16px;color: #333333;text-align: center;line-height: 21px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">[m
+[32m+[m[32m                                                    Seller <br/> Slider[m
+[32m+[m[32m                                                </div>[m
+[32m+[m[32m                                            </div>[m
+[32m+[m[32m                                        </a>[m
+[32m+[m[32m                                    </div>[m
+[32m+[m[32m                                    <div class="text-center col-xs-12 col-sm-3 col-md-3 mb16 mt16" style="float: left;">[m
+[32m+[m[32m                                        <a href="https://apps.odoo.com/apps/modules/13.0/marketplace_daily_deals" target="_blank">[m
+[32m+[m[32m                                            <div>[m
+[32m+[m[32m                                                <img class="img img-responsive" alt="not found" width="100" height="100" style="border-radius: 16px;" src="https://apps.odoocdn.com/apps/assets/13.0/marketplace_daily_deals/icon.png">[m
+[32m+[m[32m                                                <div class="mt8" style="font-size: 16px;color: #333333;text-align: center;line-height: 21px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">[m
+[32m+[m[32m                                                    Daily Deals <br/> And Flash Sales[m
+[32m+[m[32m                                                </div>[m
+[32m+[m[32m                                            </div>[m
+[32m+[m[32m                                        </a>[m
+[32m+[m[32m                                    </div>[m
+[32m+[m[32m                                    <div class="text-center col-xs-12 col-sm-3 col-md-3 mb16 mt16" style="float: left;">[m
+[32m+[m[32m                                        <a href="https://apps.odoo.com/apps/modules/13.0/marketplace_buyer_seller_communication" target="_blank">[m
+[32m+[m[32m                                            <div>[m
+[32m+[m[32m                                                <img class="img img-responsive" width="100" height="100" style="border-radius: 16px;" src="https://apps.odoocdn.com/apps/assets/13.0/marketplace_buyer_seller_communication/icon.png">[m
+[32m+[m[32m                                                <div class="mt8" style="font-size: 16px;color: #333333;text-align: center;line-height: 21px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">[m
+[32m+[m[32m                                                    Buyer Seller <br/> Communication[m
+[32m+[m[32m                                                </div>[m
+[32m+[m[32m                                            </div>[m
+[32m+[m[32m                                        </a>[m
+[32m+[m[32m                                    </div>[m
+[32m+[m[32m                                    <div class="text-center col-xs-12 col-sm-3 col-md-3 mb16 mt16" style="float: left;">[m
+[32m+[m[32m                                        <a href="https://apps.odoo.com/apps/modules/13.0/marketplace_advance_commission" target="_blank">[m
+[32m+[m[32m                                            <div>[m
+[32m+[m[32m                                                <img class="img img-responsive" width="100" height="100" style="border-radius: 16px;" src="https://apps.odoocdn.com/apps/assets/13.0/marketplace_advance_commission/icon.png">[m
+[32m+[m[32m                                                <div class="mt8" style="font-size: 16px;color: #333333;text-align: center;line-height: 21px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">[m
+[32m+[m[32m                                                    Advance <br/> Commission[m
+[32m+[m[32m                                                </div>[m
+[32m+[m[32m                                            </div>[m
+[32m+[m[32m                                        </a>[m
+[32m+[m[32m                                    </div>[m
+[32m+[m[32m                                    <div class="text-center col-xs-12 col-sm-3 col-md-3 mb16 mt16" style="float: left;">[m
+[32m+[m[32m                                        <a href="https://apps.odoo.com/apps/modules/13.0/marketplace_qna_and_faq" target="_blank">[m
+[32m+[m[32m                                            <div>[m
+[32m+[m[32m                                                <img class="img img-responsive" width="100" height="100" style="border-radius: 16px;" src="https://apps.odoocdn.com/apps/assets/13.0/marketplace_qna_and_faq/icon.png">[m
+[32m+[m[32m                                                <div class="mt8" style="font-size: 16px;color: #333333;text-align: center;line-height: 21px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">[m
+[32m+[m[32m                                                    Marketplace <br/> Q&A & FAQ[m
+[32m+[m[32m                                                </div>[m
+[32m+[m[32m                                            </div>[m
+[32m+[m[32m                                        </a>[m
+[32m+[m[32m                                    </div>[m
+[32m+[m[32m                                    <div class="text-center col-xs-12 col-sm-3 col-md-3 mb16 mt16" style="float: left;">[m
+[32m+[m[32m                                        <a href="https://apps.odoo.com/apps/modules/13.0/marketplace_voucher" target="_blank">[m
+[32m+[m[32m                                            <div>[m
+[32m+[m[32m                                                <img class="img img-responsive" alt="not found" width="100" height="100" style="border-radius: 16px;" src="https://apps.odoocdn.com/apps/assets/13.0/marketplace_voucher/icon.png">[m
+[32m+[m[32m                                                <div class="mt8" style="font-size: 16px;color: #333333;text-align: center;line-height: 21px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">[m
+[32m+[m[32m                                                    MarketPlace <br/> Voucher[m
+[32m+[m[32m                                                </div>[m
+[32m+[m[32m                                            </div>[m
+[32m+[m[32m                                        </a>[m
+[32m+[m[32m                                    </div>[m
+[32m+[m[32m                                    <div class="text-center col-xs-12 col-sm-3 col-md-3 mb16 mt16" style="float: left;">[m
+[32m+[m[32m                                        <a href="https://apps.odoo.com/apps/modules/13.0/marketplace_ajax_login" target="_blank">[m
+[32m+[m[32m                                            <div>[m
+[32m+[m[32m                                                <img class="img img-responsive" alt="not found" width="100" height="100" style="border-radius: 16px;" src="https://apps.odoocdn.com/apps/assets/13.0/marketplace_ajax_login/icon.png">[m
+[32m+[m[32m                                                <div class="mt8" style="font-size: 16px;color: #333333;text-align: center;line-height: 21px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">[m
+[32m+[m[32m                                                    Marketplace <br/> Ajax Login[m
+[32m+[m[32m                                                </div>[m
+[32m+[m[32m                                            </div>[m
+[32m+[m[32m                                        </a>[m
+[32m+[m[32m                                    </div>[m
+[32m+[m[32m                                    <div class="text-center col-xs-12 col-sm-3 col-md-3 mb16 mt16" style="float: left;">[m
+[32m+[m[32m                                        <a href="https://apps.odoo.com/apps/modules/13.0/marketplace_seller_collection_page" target="_blank">[m
+[32m+[m[32m                                            <div>[m
+[32m+[m[32m                                                <img class="img img-responsive" alt="not found" width="100" height="100" style="border-radius: 16px;" src="https://apps.odoocdn.com/apps/assets/13.0/marketplace_seller_collection_page/icon.png">[m
+[32m+[m[32m                                                <div class="mt8" style="font-size: 16px;color: #333333;text-align: center;line-height: 21px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">[m
+[32m+[m[32m                                                    Seller <br/> collections[m
+[32m+[m[32m                                                </div>[m
+[32m+[m[32m                                            </div>[m
+[32m+[m[32m                                        </a>[m
+[32m+[m[32m                                    </div>[m
+[32m+[m[32m                                </div>[m
+[32m+[m[32m                            </div>[m
+[32m+[m[32m                            <div class="carousel-item" style="min-height: 0px;">[m
+[32m+[m[32m                                <div class="row">[m
+[32m+[m[32m                                    <div class="text-center col-xs-12 col-sm-3 col-md-3 mb16 mt16" style="float: left;">[m
+[32m+[m[32m                                        <a href="https://apps.odoo.com/apps/modules/13.0/marketplace_seller_auction" target="_blank">[m
+[32m+[m[32m                                            <div>[m
+[32m+[m[32m                                                <img class="img img-responsive" alt="not found" width="100" height="100" style="border-radius: 16px;" src="https://apps.odoocdn.com/apps/assets/13.0/marketplace_seller_auction/icon.png">[m
+[32m+[m[32m                                                <div class="mt8" style="font-size: 16px;color: #333333;text-align: center;line-height: 21px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">[m
+[32m+[m[32m                                                    Seller <br/> Auction[m
+[32m+[m[32m                                                </div>[m
+[32m+[m[32m                                            </div>[m
+[32m+[m[32m                                        </a>[m
+[32m+[m[32m                                    </div>[m
+[32m+[m[32m                                    <div class="text-center col-xs-12 col-sm-3 col-md-3 mb16 mt16" style="float: left;">[m
+[32m+[m[32m                                        <a href="https://apps.odoo.com/apps/modules/13.0/marketplace_seller_blogs" target="_blank">[m
+[32m+[m[32m                                            <div>[m
+[32m+[m[32m                                                <img class="img img-responsive" width="100" height="100" style="border-radius: 16px;" src="https://apps.odoocdn.com/apps/assets/13.0/marketplace_seller_blogs/icon.png">[m
+[32m+[m[32m                                                <div class="mt8" style="font-size: 16px;color: #333333;text-align: center;line-height: 21px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">[m
+[32m+[m[32m                                                    Seller <br/> Blogs[m
+[32m+[m[32m                                                </div>[m
+[32m+[m[32m                                            </div>[m
+[32m+[m[32m                                        </a>[m
+[32m+[m[32m                                    </div>[m
+[32m+[m[32m                                    <div class="text-center col-xs-12 col-sm-3 col-md-3 mb16 mt16" style="float: left;">[m
+[32m+[m[32m                                        <a href="https://apps.odoo.com/apps/modules/13.0/marketplace_quote_system" target="_blank">[m
+[32m+[m[32m                                            <div>[m
+[32m+[m[32m                                                <img class="img img-responsive" width="100" height="100" style="border-radius: 16px;" src="https://apps.odoocdn.com/apps/assets/13.0/marketplace_quote_system/icon.png">[m
+[32m+[m[32m                                                <div class="mt8" style="font-size: 16px;color: #333333;text-align: center;line-height: 21px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">[m
+[32m+[m[32m                                                    Quote <br/> System[m
+[32m+[m[32m                                                </div>[m
+[32m+[m[32m                                            </div>[m
+[32m+[m[32m                                        </a>[m
+[32m+[m[32m                                    </div>[m
+[32m+[m[32m                                    <div class="text-center col-xs-12 col-sm-3 col-md-3 mb16 mt16" style="float: left;">[m
+[32m+[m[32m                                        <a href="https://apps.odoo.com/apps/modules/13.0/marketplace_product_size_chart" target="_blank">[m
+[32m+[m[32m                                            <div>[m
+[32m+[m[32m                                                <img class="img img-responsive" width="100" height="100" style="border-radius: 16px;" src="https://apps.odoocdn.com/apps/assets/13.0/marketplace_product_size_chart/icon.png">[m
+[32m+[m[32m                                                <div class="mt8" style="font-size: 16px;color: #333333;text-align: center;line-height: 21px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">[m
+[32m+[m[32m                                                    Seller Product <br/> Size Chart[m
+[32m+[m[32m                                                </div>[m
+[32m+[m[32m                                            </div>[m
+[32m+[m[32m                                        </a>[m
+[32m+[m[32m                                    </div>[m
+[32m+[m[32m                                    <div class="text-center col-xs-12 col-sm-3 col-md-3 mb16 mt16" style="float: left;">[m
+[32m+[m[32m                                        <a href="https://apps.odoo.com/apps/modules/13.0/marketplace_seller_locator" target="_blank">[m
+[32m+[m[32m                                            <div>[m
+[32m+[m[32m                                                <img class="img img-responsive" alt="not found" width="100" height="100" style="border-radius: 16px;" src="https://apps.odoocdn.com/apps/assets/13.0/marketplace_seller_locator/icon.png">[m
+[32m+[m[32m                                                <div class="mt8" style="font-size: 16px;color: #333333;text-align: center;line-height: 21px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">[m
+[32m+[m[32m                                                    Seller <br/> Locator[m
+[32m+[m[32m                                                </div>[m
+[32m+[m[32m                                            </div>[m
+[32m+[m[32m                                        </a>[m
+[32m+[m[32m                                    </div>[m
+[32m+[m[32m                                    <div class="text-center col-xs-12 col-sm-3 col-md-3 mb16 mt16" style="float: left;">[m
+[32m+[m[32m                                        <a href="https://apps.odoo.com/apps/modules/13.0/marketplace_seller_vacation" target="_blank">[m
+[32m+[m[32m                                            <div>[m
+[32m+[m[32m                                                <img class="img img-responsive" alt="not found" width="100" height="100" style="border-radius: 16px;" src="https://apps.odoocdn.com/apps/assets/13.0/marketplace_seller_vacation/icon.png">[m
+[32m+[m[32m                                                <div class="mt8" style="font-size: 16px;color: #333333;text-align: center;line-height: 21px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">[m
+[32m+[m[32m                                                    Seller <br/> Vacation[m
+[32m+[m[32m                                                </div>[m
+[32m+[m[32m                                            </div>[m
+[32m+[m[32m                                        </a>[m
+[32m+[m[32m                                    </div>[m
+[32m+[m[32m                                    <div class="text-center col-xs-12 col-sm-3 col-md-3 mb16 mt16" style="float: left;">[m
+[32m+[m[32m                                        <a href="https://apps.odoo.com/apps/modules/13.0/marketplace_product_pack" target="_blank">[m
+[32m+[m[32m                                            <div>[m
+[32m+[m[32m                                                <img class="img img-responsive" alt="not found" width="100" height="100" style="border-radius: 16px;" src="https://apps.odoocdn.com/apps/assets/13.0/marketplace_product_pack/icon.png">[m
+[32m+[m[32m                                                <div class="mt8" style="font-size: 16px;color: #333333;text-align: center;line-height: 21px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">[m
+[32m+[m[32m                                                    Marketplace <br/> Product Pack[m
+[32m+[m[32m                                                </div>[m
+[32m+[m[32m                                            </div>[m
+[32m+[m[32m                                        </a>[m
+[32m+[m[32m                                    </div>[m
+[32m+[m[32m                                    <div class="text-center col-xs-12 col-sm-3 col-md-3 mb16 mt16" style="float: left;">[m
+[32m+[m[32m                                        <a href="https://apps.odoo.com/apps/modules/13.0/marketplace_seller_badges" target="_blank">[m
+[32m+[m[32m                                            <div>[m
+[32m+[m[32m                                                <img class="img img-responsive" alt="not found" width="100" height="100" style="border-radius: 16px;" src="https://apps.odoocdn.com/apps/assets/13.0/marketplace_seller_badges/icon.png">[m
+[32m+[m[32m                                                <div class="mt8" style="font-size: 16px;color: #333333;text-align: center;line-height: 21px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">[m
+[32m+[m[32m                                                    Seller <br/> Badges[m
+[32m+[m[32m                                                </div>[m
+[32m+[m[32m                                            </div>[m
+[32m+[m[32m                                        </a>[m
+[32m+[m[32m                                    </div>[m
+[32m+[m[32m                                </div>[m
+[32m+[m[32m                            </div>[m
+[32m+[m[32m                        </div>[m
+[32m+[m[32m                        <a class="carousel-control-prev" href="#mp_addons_carousel" data-slide="prev" style="left:-50px;width: 35px;color: #000;">[m
+[32m+[m[32m                            <span class="carousel-control-prev-icon" style="font-size:35px;opacity: 0.2;color:#000000;margin-top: -50px;">[m
+[32m+[m[32m                                    <i class="fa fa-chevron-left" aria-hidden="false"></i>[m
+[32m+[m[32m                                </span>[m
+[32m+[m[32m                        </a>[m
+[32m+[m[32m                        <a class="carousel-control-next" href="#mp_addons_carousel" data-slide="next" style="right:-40px;width: 35px;color: #000;">[m
+[32m+[m[32m                            <span class="carousel-control-next-icon" style="font-size:35px;opacity: 0.2;color:#000000;margin-top: -50px;">[m
+[32m+[m[32m                                    <i class="fa fa-chevron-right" aria-hidden="false"></i>[m
+[32m+[m[32m                                </span>[m
+[32m+[m[32m                        </a>[m
+[32m+[m[32m                    </div>[m
+[32m+[m[32m                </div>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m    </div>[m
+[32m+[m[32m</section>[m
+ [m
+ <section class="mb-5" id="webkul_support">[m
+     <div class="row">[m

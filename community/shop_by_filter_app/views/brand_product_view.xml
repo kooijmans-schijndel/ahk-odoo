@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<template id="brand_product_view_template" name="Brands">
+		<t t-call="website.layout">
+			<style>
+			.oe_image {
+					float: left;
+					width: 350px;
+					position: relative;
+  					left: 90px;
+  					margin-top: 20px;
+  					margin-left: 80px;
+				}
+			</style>
+			<h3 class="text-center">Products</h3>
+				<t t-foreach="products" t-as='product'>
+					<div align="center" class="oe_image col-lg-8">
+						<div class="oe_product_image">
+	                   		<span t-field="product.image_1920" t-options="{'widget': 'image', 'resize': None if product_image_big else '200x200'}" class="image"/>
+                		</div>
+                		<section>
+                	   		<h6>
+	                        	<a itemprop="name" t-att-content="product.name" t-field="product.name" t-att-href="keep_brand('/shop/product/' + slug(product), product=0)" t-attf-class="nav-link#{' active' if product.id == int(product_id or 0) else ''}"/>
+	                         	<div itemprop="offers" itemscope="itemscope" itemtype="http://schema.org/Offer" class="product_price">
+	                         	</div>
+	                    	</h6>
+                    	</section>
+               	 	</div>
+            	</t>
+			</t>
+	</template>
+</odoo>
