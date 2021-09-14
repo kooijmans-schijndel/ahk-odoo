@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<odoo>
+    <data noupdate="1">
+        <!-- Scheduler for Event Alarm-->
+        <record forcecreate="True" id="ir_cron_scheduler_alarm" model="ir.cron">
+            <field name="name">Full-Text Search: Index Product Template</field>
+            <field name="model_id" ref="product.model_product_template"/>
+            <field name="state">code</field>
+            <field name="code">model.fill_tsvector_column()</field>
+            <field eval="True" name="active" />
+            <field name="user_id" ref="base.user_root" />
+            <field name="interval_number" eval="False"/>
+            <field name="interval_type" eval="False"/>
+            <field eval="datetime.now().strftime('%Y-%m-%d %H:%M:%S')" name="nextcall" />
+        </record>
+    </data>
+</odoo>

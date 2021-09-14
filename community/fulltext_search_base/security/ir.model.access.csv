@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_fts_index_all,access.fts.index.all,model_fts_index,,0,0,0,0
+access_fts_index_system,access.fts.index.system,model_fts_index,base.group_system,1,1,1,1
+access_fts_index_column_all,access.fts.index.column.all,model_fts_index_column,,0,0,0,0
+access_fts_index_column_system,access.fts.index.column.system,model_fts_index_column,base.group_system,1,1,1,1
