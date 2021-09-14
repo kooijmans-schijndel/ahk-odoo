@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<odoo>
+    <data noupdate="1">
+        <!-- Scheduler for Event Alarm-->
+        <record forcecreate="True" id="fts_product_index" model="fts.index">
+            <field name="name">Product search index</field>
+            <field name="model_name">product.template</field>
+            <field name="cron_name">website_sale_fulltext_search.ir_cron_scheduler_alarm</field>            
+        </record>
+
+        <record model="fts.index.column">
+            <!-- <field name="name">name</field> -->
+            <field name="index_id" ref="fts_product_index"></field>
+            <field name="col_name">name</field>
+            <field name="weight">A</field>
+        </record>
+
+        <record model="fts.index.column">
+            <!-- <field name="name">description</field> -->
+            <field name="index_id" ref="fts_product_index"></field>
+            <field name="col_name">description</field>
+            <field name="weight">B</field>
+        </record>
+
+        <record model="fts.index.column">
+            <!-- <field name="name">description_sale</field> -->
+            <field name="index_id" ref="fts_product_index"></field>
+            <field name="col_name">description_sale</field>
+            <field name="weight">B</field>
+        </record>
+    </data>
+</odoo>

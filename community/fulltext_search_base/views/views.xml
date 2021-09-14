@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+	<record model="ir.ui.view" id="survey_question_form">
+        <field name="name">fts.index.column.view.form</field>
+        <field name="model">fts.index.column</field>
+        <field name="arch" type="xml">
+        	<form string="Full Text Index" >
+        		<sheet>
+        			<group>
+        				<group>
+			        		<field name="name"/>
+			        		<field name="weight" />  
+			        		<field name="index_id" invisible="1"/>
+			        		<field name="col_name" invisible="1"/>       		
+	        			</group>
+	        		</group>
+        		</sheet>
+        	</form>        	
+        </field>
+    </record>
+
+	<record id="view_fts_index_tree" model="ir.ui.view">
+        <field name="name">fts.index.view.tree</field>
+        <field name="model">fts.index</field>
+        <field name="arch" type="xml">
+            <tree string="Full Text Indices" create="false" delete="false">
+                <field name="name"/>
+                <field name="indexed_column_str"/>           
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_fts_index_form" model="ir.ui.view">
+        <field name="name">fts.index.view.form</field>
+        <field name="model">fts.index</field>
+        <field name="arch" type="xml">
+            <form string="Full Text Index" duplicate="false" create="false" >
+                <sheet>
+                    <group>
+                        <group>
+                        	<field name="id" invisible="1"/>
+                            <field name="name" readonly="1"/>
+                            <field name="model_name" readonly="1"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Indexed Columns">
+                        	<field name="indexed_columns" colspan="4" nolabel="1" context="{'default_index_id': id, 'model_name': model_name}">
+                        		<tree string="Indexed Columns">
+                        			<field name="name" invisible="1"/>
+                        			<field name="col_name" />
+                        			<field name="weight" />
+                        		</tree>
+                        	</field>
+                    	</page>
+                    </notebook>
+                </sheet>           
+            </form>
+        </field>
+    </record>
+
+    <record id="view_fts_index_search" model="ir.ui.view">
+        <field name="name">fts.index.view.search</field>
+        <field name="model">fts.index</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+            </search>
+        </field>
+    </record>
+
+	<record model="ir.actions.act_window" id="action_fts_index_tree">
+        <field name="name">Indices</field>
+        <field name="res_model">fts.index</field>
+        <field name="view_id" ref="view_fts_index_tree" /> 
+        <field name="search_view_id" ref="view_fts_index_search"/>   
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Configure columns to be indexed
+            </p><p>
+                Select columns and assign weight to each.
+            </p>
+        </field>    
+    </record>
+
+
+	<menuitem id="menu_fts" name="Full Text Search" 
+			groups="base.group_no_one"
+			parent="base.menu_custom" sequence="30"/>
+
+	<!-- Add menu entry in Settings/Full-text Search -->
+	<menuitem id="menu_fts_config_index" 
+				name="Config Indices" 
+				parent="menu_fts" 
+				action="action_fts_index_tree"
+                sequence="1"/>
+
+<!--     <menuitem id="phone_blacklist_menu_4"
+        name="Phone Blacklist 6"
+        parent="menu_fts"
+        sequence="4"
+        action="phone_validation.action_fts_index_tree"/>
+ -->
+	
+</odoo>
